@@ -1,0 +1,23 @@
+.about__section {
+    border:2px solid white;
+    text-align: center;
+    position: relative;
+  }
+  
+  .about__section::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../assets/materials/1.png');
+    opacity: 0.2;
+    z-index: -1;
+  }
+  
+  .about__container{
+      padding: 2rem 10rem;
+  }
+  
