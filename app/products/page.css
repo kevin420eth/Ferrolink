@@ -1,4 +1,16 @@
-.about_page{
-    height: 100vh;
-    padding-top: 6rem;
+.about_page {
+  min-height: 100vh;
+  padding: 6rem 100px 0;
+}
+
+.product_section {
+  border: 2px solid white;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product_container {
+  border: 2px solid red;
 }
