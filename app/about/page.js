@@ -1,12 +1,16 @@
 import './page.css'
+import Image from 'next/image'
+import company_photo from '@/assets/materials/company_photo.png'
+import forging_photo from '@/assets/materials/x.png'
 
 const page = () => {
   return (
     <main className="about_page">
-      <section id='about' className='section about__section'>
-        <h1 className='about__title'>About</h1>
-        <div className='about__container'>
-          <p className='about__content'>
+      <h1 className='section_title'>About Us</h1>
+      <section className='about_section'>
+
+        <div className='company_info_container'>
+          <p className='company_info_content'>
             Ferrolink Industries co., Ltd. was established in 1997. In the early stage, the company is
             specialized in various hot forging tools and manufacturing auto parts with accumulated more than
             50 years experience. The company has been devoted to perfect, practical and competitve products
@@ -15,10 +19,14 @@ const page = () => {
             of the advanced countries in Europe and America. Therefore, the customers can be more confident
             and reassuring in marketing, and creat a niche for sustainable business.
           </p>
+          <div className='company_photo_container'>
+            <Image className='company_photo' src={company_photo} alt='company_photo' />
+          </div>
         </div>
-        <h1>Our Persitence</h1>
-        <div className='about__container'>
-          <p className='about__content'>
+
+        <div className='company_info_container'>
+          <p className='company_info_content'>
+            <h1 className='company_info_content_title'>Our Persitence</h1>
             We always uphold the business philosophy and operating principles of “Diligence and Integrity”,
             “International Quality”, “Technical Innovation”, “Just-in-time Delievery” and “Customer
             Satisfaction”. Also, we insist on the highest quality standards to all our products and
@@ -30,7 +38,11 @@ const page = () => {
             manufacturing, services, content and access providers, the company can create virtual and
             integrated services for the goal of sustainable business.
           </p>
+          <div className='company_photo_container'>
+            <Image className='company_photo' src={forging_photo} alt='company_photo' />
+          </div>
         </div>
+
       </section>
     </main>
   )
